@@ -1,0 +1,112 @@
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+
+nav {
+  background-color: black;
+  padding: 0.7rem;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+}
+
+nav ul a {
+  padding: 2px;
+}
+
+nav li {
+  margin: .5rem 0;
+}
+
+
+
+img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+/*Hello!*/
+
+main {
+  -webkit-column-count: 1;  
+  -moz-column-count: 1;
+  column-count: 1;
+}
+
+@media screen and (min-width: 536px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  nav ul li {
+    margin: 0 1rem;
+  }
+
+  main {
+    padding: 10px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+    -webkit-column-gap: 10px; 
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+  }
+
+  img {
+    border-radius: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  main {
+    -webkit-column-count: 4; 
+    -moz-column-count: 4;
+    column-count: 4;
+    
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+
+  }
+
+  img {
+    border-radius: 30px;
+  }
+}
